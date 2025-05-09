@@ -1,141 +1,484 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vyom Yadav | Software Engineer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="Vyom Yadav - Software Engineer Portfolio" />
+    <meta name="author" content="Vyom Yadav" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
 
-    body {
-      background: #0f172a;
-      color: #e2e8f0;
-      line-height: 1.6;
-    }
+    <title>Vyom Yadav | Full Stack Engineer</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
-    header {
-      text-align: center;
-      padding: 4rem 1rem;
-      background: linear-gradient(90deg, #1e3a8a, #3b82f6);
-      color: #fff;
-      animation: fadeInDown 1s ease-in-out;
-    }
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/templatemo-style.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/css/lightbox.css" />
+    
+    <style>
+      .download-btn {
+        display: inline-block;
+        font-size: 13px;
+        padding: 12px 20px;
+        background-color: #fff;
+        color: #4883ff;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-radius: 20px;
+        transition: all 0.3s;
+        border: none;
+        outline: none;
+        margin-top: 20px;
+      }
+      
+      .download-btn:hover {
+        background-color: #4883ff;
+        color: #fff;
+        text-decoration: none;
+      }
+      
+      /* Make project descriptions more visible */
+      .project-description {
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 1.4;
+        color:  #7a7a7a; /* Improved visibility */
+      }
+      
+      .project-link {
+        margin-top: 10px;
+        display: inline-block;
+        color: #4883ff;
+        font-size: 14px;
+        text-decoration: none;
+      }
+      
+      .project-link:hover {
+        text-decoration: underline;
+      }
+      
+      .snip1321 figcaption i.fa-search {
+        display: none;
+      }
+      
+      /* Fix for equal height skill boxes */
+      .service-item {
+        min-height: 280px;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      /* Make sections adapt to content */
+      section.section {
+        min-height: auto;
+        padding: 60px 0;
+      }
+      
+      /* Footer positioning */
+      #page-wraper {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      
+      .copyright-text {
+        width: 100%;
+        text-align: center;
+        margin-top: auto;
+      }
+      
+      .menu {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+      
+      .container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
 
-    header h1 {
-      font-size: 2.5rem;
-      font-weight: 800;
-    }
+      .isotope-item img {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        border-radius: 8px;
+        display: block;
+        object-position: center;
+      }
+    </style>
+  </head>
 
-    header p {
-      font-size: 1.1rem;
-      margin-top: 0.5rem;
-      font-weight: 400;
-    }
+  <body>
+    <div id="page-wraper">
+      <!-- Sidebar Menu -->
+      <div class="responsive-nav">
+        <i class="fa fa-bars" id="menu-toggle"></i>
+        <div id="menu" class="menu">
+          <i class="fa fa-times" id="menu-close"></i>
+          <div class="container">
+            <div class="image">
+              <a href="#"><img src="assets/images/profile-photo.jpeg" alt="Vyom Yadav" /></a>
+            </div>
+            <div class="author-content">
+              <h4>Vyom Yadav</h4>
+              <span>Full Stack Developer</span>
+              <div>
+                <a href="Vyom_Yadav_Resume_2025.pdf" download target="_blank" class="download-btn">Download Resume</a>
+              </div>
+            </div>
+            <nav class="main-nav" role="navigation">
+              <ul class="main-menu">
+                <li><a href="#section1">About Me</a></li>
+                <li><a href="#section2">Skills</a></li>
+                <li><a href="#section3">Projects</a></li>
+              </ul>
+            </nav>
+            <div class="social-network">
+              <ul class="soial-icons">
+                <li>
+                  <a href="https://linkedin.com/in/vyom-yadav-a517b91a" target="_blank">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/vyomyadav" target="_blank"><i class="fa fa-github"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="copyright-text">
+              <p>&copy; 2025 Vyom Yadav</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    .section {
-      padding: 2rem 1.5rem;
-      max-width: 900px;
-      margin: auto;
-      animation: fadeInUp 1s ease-in-out;
-    }
+      <section class="section about-me" data-section="section1">
+        <div class="container">
+          <div class="section-heading">
+            <h2>About Me</h2>
+            <div class="line-dec"></div>
+            <span
+              >I'm a full-stack software engineer with 3+ years of experience building scalable web apps using React, Node.js, Django, and cloud platforms like AWS. Specializing in full stack development, I hold a Master's in Computer Engineering from NYU and have a strong interest in AI-powered applications.</span
+            >
+          </div>
+          <div class="left-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-image">
+                  <img src="assets/images/left-image.jpg" alt="" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-text">
+                  <h4>Education</h4>
+                  <p>
+                    <strong>New York University</strong> - New York, NY<br>
+                    Master of Science: Computer Engineering | Expected May 2025 | GPA: 3.7/4.0
+                    <br><br>
+                    <strong>Manipal University Jaipur</strong> – Jaipur, India<br>
+                    Bachelor of Technology in Information Technology | Apr 2020 | GPA: 8.59/10
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-text">
+                  <h4>Work Experience</h4>
+                  <p>
+                    <strong>Tiny Archives</strong> - New York, NY<br>
+                    Computer Science Engineer Intern | Sept 2024 - Dec 2024<br>
+                    Enhanced application performance and UX by designing optimized, mobile-responsive UI components.
+                    <br><br>
+                    <strong>Talview (AIWF Technologies)</strong> – Bengaluru, India<br>
+                    Full Stack Developer | Apr 2020 – Jun 2023<br>
+                    Led full-stack development of a scalable event management platform supporting 10,000+ concurrent users.
+                    <br><br>
+                    <strong>Prosix Infotech Pvt Ltd</strong> – Lucknow, India<br>
+                    Summer Computer Science Intern | May 2019 - July 2019<br>
+                    Led migration of a legacy PHP codebase from v2.0 to v3.0, improving code maintainability.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-image">
+                  <img src="assets/images/right-image.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    h2 {
-      color: #60a5fa;
-      margin-bottom: 1rem;
-      border-bottom: 2px solid #3b82f6;
-      display: inline-block;
-    }
+      <section class="section my-services" data-section="section2">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Skills</h2>
+            <div class="line-dec"></div>
+            <span
+              >A comprehensive range of technical skills acquired through industry experience and academic training.</span
+            >
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="first-service-icon service-icon"></div>
+                <h4>Frontend Development</h4>
+                <p>
+                  Expertise in React, Next.js, TypeScript, JavaScript, HTML5, and CSS3. Experience with responsive UI design and modern frontend frameworks including EmberJS and BackboneJS. Proficient in building interactive and user-friendly interfaces.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="second-service-icon service-icon"></div>
+                <h4>Backend Development</h4>
+                <p>
+                  Proficient with Node.js, Django, Spring Boot, GraphQL, and RESTful APIs. Strong database knowledge including MySQL, PostgreSQL, and MongoDB. Experience building scalable backend services and microservice architectures with robust error handling and performance optimization.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="third-service-icon service-icon"></div>
+                <h4>Cloud & DevOps</h4>
+                <p>
+                  Experience with AWS (EC2, S3, RDS, ELB), Azure, Google Cloud Platform. Skilled in CI/CD with Docker, Kubernetes, Jenkins, and GitLab CI. Capable of implementing robust deployment pipelines and infrastructure-as-code solutions.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="fourth-service-icon service-icon"></div>
+                <h4>AI & Machine Learning</h4>
+                <p>
+                  Knowledge of TensorFlow, PyTorch, Keras, Scikit-learn, and CNN architectures. Applied machine learning in projects for image processing and medical applications. Experience with implementing practical AI solutions to solve real-world problems.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    ul {
-      list-style-type: none;
-      padding-left: 1rem;
-    }
+      <section class="section my-work" data-section="section3">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Projects</h2>
+            <div class="line-dec"></div>
+            <span
+              >Featured work across AI, full-stack systems, and embedded platforms.</span
+            >
+          </div>
+          <div class="row">
+            <div class="isotope-wrapper">
+              <form class="isotope-toolbar">
+                <label
+                  ><input
+                    type="radio"
+                    data-type="*"
+                    checked=""
+                    name="isotope-filter"
+                  />
+                  <span>All</span></label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    data-type="web"
+                    name="isotope-filter"
+                  />
+                  <span>Web</span></label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    data-type="ai"
+                    name="isotope-filter"
+                  />
+                  <span>AI</span></label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    data-type="research"
+                    name="isotope-filter"
+                  />
+                  <span>Research</span></label
+                >
+              </form>
+              <div class="isotope-box">
+  
 
-    li {
-      margin-bottom: 1rem;
-    }
+                <div class="isotope-item" data-type="web">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/healthy_budget.png"
+                      alt="Expense Tracker App"
+                    />
+                    <figcaption>
+                      <h4>Expense Tracker App</h4>
+                      <span>Python, Django, ReactJS, MySQL</span>
+                      <p class="project-description">Built full-stack budgeting tool with real-time tracking, visual analytics, and alerts to help users manage spending.</p>
+                      <a href="https://healthy-budget.vercel.app/" class="project-link" target="_blank">View Project</a>
+                    </figcaption>
+                  </figure>
+                </div>
 
-    .project, .experience {
-      margin-bottom: 2rem;
-    }
+                <div class="isotope-item" data-type="research">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/alzheimers.jpg"
+                      alt="Research Paper: Alzheimer's Detection"
+                    />
+                    <figcaption>
+                      <h4>Alzheimer's Detection Research</h4>
+                      <span>ConvNet, Deep Learning, Medical Imaging</span>
+                      <p class="project-description">Developed a deep learning model using MRI data (MIRIAD) achieving 97% classification accuracy.</p>
+                      <a href="https://www.tandfonline.com/doi/full/10.1080/23311916.2024.2314872" class="project-link" target="_blank">Read Research</a>
+                    </figcaption>
+                  </figure>
+                </div>
 
-    .contact a {
-      color: #3b82f6;
-      text-decoration: none;
-    }
+                <div class="isotope-item" data-type="ai">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/garbage.jpg"
+                      alt="AI Waste Detection"
+                    />
+                    <figcaption>
+                      <h4>Waste Detection System</h4>
+                      <span>Python, TensorFlow, OpenCV, ResNet50</span>
+                      <p class="project-description">Built smart waste detection with CCTV footage, leveraging ResNet and OpenCV to classify waste at 92% accuracy.</p>
+                      <a href="https://github.com/vyomyadav/garbage-detection" class="project-link" target="_blank">View on GitHub</a>
+                    </figcaption>
+                  </figure>
+                </div>
 
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      background: #1e293b;
-    }
+                <div class="isotope-item" data-type="embedded">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/embedded.png"
+                      alt="Parkinson's Tremor Detection"
+                    />
+                    <figcaption>
+                      <h4>Parkinson's Tremor Detection</h4>
+                      <span>C/C++, Embedded C, STM32, Python</span>
+                      <p class="project-description">Designed tremor detection on STM32 to detect 3–6 Hz tremors linked to Parkinson's with real-time analysis.</p>
+                      <a href="https://github.com/vyomyadav/Parkinsons-Embedded-Challenge" class="project-link" target="_blank">View on GitHub</a>
+                    </figcaption>
+                  </figure>
+                </div>
 
-    @keyframes fadeInUp {
-      0% {opacity: 0; transform: translateY(30px);}
-      100% {opacity: 1; transform: translateY(0);}
-    }
+                <div class="isotope-item" data-type="web">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/dream.png"
+                      alt="Candidate Screening Platform"
+                    />
+                    <figcaption>
+                      <h4>Candidate Screening Platform</h4>
+                      <span>NodeJS, Solr, NextJS, OpenAI, MySQL</span>
+                      <p class="project-description">Developed AI recruitment platform using OpenAI and Solr, reaching ~90% match accuracy and reducing screening time by 70%.</p>
+                      <a href="https://dev.wdream.fr/" class="project-link" target="_blank">View Project</a>
+                    </figcaption>
+                  </figure>
+                </div>
 
-    @keyframes fadeInDown {
-      0% {opacity: 0; transform: translateY(-30px);}
-      100% {opacity: 1; transform: translateY(0);}
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Vyom Yadav</h1>
-    <p>Full Stack Developer | AI Enthusiast | NYU Graduate</p>
-  </header>
+                <div class="isotope-item" data-type="ai">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/dream_chatbot.png"
+                      alt="AI Chatbot Form Generator"
+                    />
+                    <figcaption>
+                      <h4>AI Chatbot Form Generator</h4>
+                      <span>MySQL, ReactJS, NodeJS, OpenAI</span>
+                      <p class="project-description">Built OpenAI-powered chatbot to generate personalized CVs and dynamic forms with adaptive, user-driven logic.</p>
+                      <a href="http://dev.wdream.fr:8084/homepage" class="project-link" target="_blank">View Project</a>
+                    </figcaption>
+                  </figure>
+                </div>
 
-  <section class="section about">
-    <h2>About Me</h2>
-    <p>I’m a full-stack software engineer with over 3 years of experience building performant and scalable web applications. I specialize in JavaScript, Python, React, and cloud platforms like AWS. Currently pursuing my Master's in Computer Engineering at NYU, I’m passionate about creating impactful solutions at the intersection of AI and software engineering.</p>
-  </section>
 
-  <section class="section projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <strong>AI Candidate Screening Platform</strong>
-      <p>Built using Node.js, Solr, and OpenAI to automate hiring workflows. Achieved 90% match accuracy and 70% reduction in screening time.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-    <div class="project">
-      <strong>Expense Tracker</strong>
-      <p>Full-stack budgeting tool built with Django, React, and MySQL featuring real-time alerts and analytics.</p>
-    </div>
-    <div class="project">
-      <strong>Chatbot & Dynamic Form Generator</strong>
-      <p>Created with OpenAI, React, and Node.js to auto-generate user-specific forms and improve completion rates by 40%.</p>
-    </div>
-  </section>
 
-  <section class="section experience">
-    <h2>Experience</h2>
-    <div class="experience">
-      <strong>Tiny Archives – Intern (2024)</strong>
-      <p>Improved mobile responsiveness and deployed secure backend systems on AWS, achieving a 25% speed boost and 0% downtime during peak use.</p>
-    </div>
-    <div class="experience">
-      <strong>Talview – Full Stack Developer (2020–2023)</strong>
-      <p>Led UI/UX efforts and built scalable platforms for 10k+ users. Migrated APIs to GraphQL and integrated CI/CD pipelines.</p>
-    </div>
-  </section>
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <section class="section contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:vyom.yadav20@gmail.com">vyom.yadav20@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/vyomyadav" target="_blank">github.com/vyomyadav</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/vyom-yadav-a517b91a" target="_blank">linkedin.com/in/vyom-yadav-a517b91a</a></p>
-  </section>
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+      //according to loftblog tut
+      $(".main-menu li:first").addClass("active");
 
-  <footer>
-    &copy; 2025 Vyom Yadav. All rights reserved.
-  </footer>
-</body>
+      var showSection = function showSection(section, isAnimate) {
+        var direction = section.replace(/#/, ""),
+          reqSection = $(".section").filter(
+            '[data-section="' + direction + '"]'
+          ),
+          reqSectionPos = reqSection.offset().top - 0;
+
+        if (isAnimate) {
+          $("body, html").animate(
+            {
+              scrollTop: reqSectionPos
+            },
+            800
+          );
+        } else {
+          $("body, html").scrollTop(reqSectionPos);
+        }
+      };
+
+      var checkSection = function checkSection() {
+        $(".section").each(function() {
+          var $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+          if (topEdge < wScroll && bottomEdge > wScroll) {
+            var currentId = $this.data("section"),
+              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+            reqLink
+              .closest("li")
+              .addClass("active")
+              .siblings()
+              .removeClass("active");
+          }
+        });
+      };
+
+      $(".main-menu").on("click", "a", function(e) {
+        e.preventDefault();
+        showSection($(this).attr("href"), true);
+      });
+
+      $(window).scroll(function() {
+        checkSection();
+      });
+    </script>
+  </body>
 </html>
